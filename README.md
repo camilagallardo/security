@@ -23,6 +23,7 @@ hashcat -a 3 -w4 -m 500 -O --username --opencl-device-types="1,2" -o results.txt
 hashcat -a 3 -w4 -m 500 -O --username --opencl-device-types="1,2" -o results.txt "-1?l?u?d" new_to_crack.txt  '?u?l?l?l?l?l?d'
 hashcat -a 3 -w4 -m 500 -O --username --opencl-device-types="1,2" -o results.txt "-1?l?u?d" new_to_crack.txt  '?u?l?l?l?l?l?d?d'
 hashcat -a 3 -w4 -m 500 -O --username --opencl-device-types="1,2" -o results.txt "-1?l?u?d" new_to_crack.txt  '?u?l?l?l?l?l?d?d?d'
+hashcat -a 3 -w4 -m 500 -O --username --opencl-device-types="1,2" -o results.txt new_to_crack.txt '-1?u?l?d' '?1?1?1?1'
 
 # Help
 - hashcat -I
