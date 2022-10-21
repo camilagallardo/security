@@ -26,7 +26,7 @@ A docker file in ubuntu, so we can easily recover passwords.
 - hashcat -a 3 -w4 -m 500 -O --username --opencl-device-types="1,2" -o results.txt new_to_crack.txt '-1?u?l?d' '?1?1?1?1'
 - hashcat -a 6 -w4 -m 500 -O --username -i --opencl-device-types="1,2" -o results.txt new_to_crack.txt wordlists/words.txt '-1?u?l?d?s' '?s?s?s'
 - hashcat -a 6 -w4 -m 500 -O --username -i --opencl-device-types="1,2" -o results.txt new_to_crack.txt wordlists/words.txt '-1?u?l?d' '?s?d?d' 
-- 
+- hashcat -w 4 -a 0 -m 500 -O -o results.txt --username -opencl-device-types="1,2" -r rules new_to_crack.txt wordlists/words.txt
 # Help
 - hashcat -I
 - [hashcat cheatsheet](https://cheatsheet.haax.fr/passcracking-hashfiles/hashcat_cheatsheet/)
